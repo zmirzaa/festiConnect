@@ -71,7 +71,7 @@ public class UserController {
 		
 		uService.authenticateUser(loginUser, results); 
 		if(results.hasErrors()) {
-			return "index.jsp"; 
+			return "login.jsp"; 
 		}
 		User loggedInUser=uService.findByEmail(loginUser.getEmail()); 
 		session.setAttribute("loginUser", loggedInUser); 

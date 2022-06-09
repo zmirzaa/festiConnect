@@ -14,7 +14,7 @@
 </head>
 <body>
 	<div class="container">
-	
+	<a href="/logout">Logout</a>
 	</div>
 </body>
 </html>
