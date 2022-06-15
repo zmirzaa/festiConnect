@@ -31,7 +31,7 @@ public class Alert {
 	private String igHandle;
 	
 	@NotEmpty(message="Please provide details. This will help get you noticed!")
-	@Size(min=5, max=200, message="Description must be atleast 5 characters.")
+	@Size(min=8, max=200, message="Description must be atleast 8 characters.")
 	private String description; 
 	
 	@Column(updatable=false)
@@ -76,13 +76,13 @@ public class Alert {
 	}
 
 
-	public String getDesc() {
+	public String getDescription() {
 		return description;
 	}
 
 
-	public void setDesc(String desc) {
-		this.description = desc;
+	public void setDescription(String description) {
+		this.description = description;
 	}
 
 

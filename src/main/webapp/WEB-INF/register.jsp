@@ -9,6 +9,7 @@
 <head>
 <meta charset="UTF-8">
 <title>FestiConnect</title>
+<link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Open+Sans&family=Pathway+Gothic+One&family=Playfair+Display:wght@500&family=Righteous&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -18,6 +19,7 @@
 		<div class="col-lg-7 text-center text-lg-start">
 			<h1 class="display-4 fw-bold lh-1 mb-3"><span>FestiConnect</span></h1>
 			<p class="col-lg-10 fs-4">Calling all festie lovers! A place where you can post festival reviews and connect with your fellow festies.</p>
+			<a class="btn btn-primary" href="/">Home</a>
 		</div>
 		<div class="col-md-10 mx-auto col-lg-5">
         <form:form class="p-4 p-md-5 border rounded-3 bg-light" action="/register" method="post" modelAttribute="user">

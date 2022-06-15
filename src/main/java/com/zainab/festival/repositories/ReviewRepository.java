@@ -12,5 +12,11 @@ import com.zainab.festival.models.Review;
 public interface ReviewRepository extends CrudRepository<Review, Long>  {
 	
 	List<Review> findAll(); 
+	
+	List<Review> findByFestivalNameContaining(String festivalName);
+	
+	
+	List<Review> findAllByOrderByRatingDesc();
+	
 
 }

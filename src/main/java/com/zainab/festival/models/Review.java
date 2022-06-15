@@ -16,9 +16,9 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
+import org.hibernate.validator.constraints.Range;
 import org.springframework.format.annotation.DateTimeFormat;
 
 @Entity
@@ -29,23 +29,23 @@ public class Review {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	@NotNull 
+	@NotEmpty(message="Please provide name of festival.") 
 	@Size(min=3, max=200, message="Festival name must be at least 3 characters.")
 	private String festivalName;
 	
 	
 	@NotEmpty(message="Please provide year attended.")
-	@DateTimeFormat(pattern="yyyy")
-	private Date year; 
+	private String yearAttended; 
 	
-	@NotNull
-	@Size(min=8, max=200, message="Description must be at least 10 characters long.")
+	
+	@NotEmpty(message="Please provide description.")
+	@Size(min=5, max=400, message="Description must be at least 5 characters long.")
 	private String description; 
-	
-	@NotEmpty(message="Please provide rating.")
+
+	@Range(min=1, max=10, message="Please provide rating.")
 	private int rating; 
 
-	@NotNull
+	
 	private String tips; 
 	
 	@Column(updatable=false)
@@ -101,26 +101,29 @@ public class Review {
 
 
 
-	public Date getYear() {
-		return year;
+	
+
+
+	public String getYearAttended() {
+		return yearAttended;
 	}
 
 
 
-	public void setYear(Date year) {
-		this.year = year;
+	public void setYearAttended(String yearAttended) {
+		this.yearAttended = yearAttended;
 	}
 
 
 
-	public String getDesc() {
+	public String getDescription() {
 		return description;
 	}
 
 
 
-	public void setDesc(String desc) {
-		this.description = desc;
+	public void setDescription(String description) {
+		this.description = description;
 	}
 
 

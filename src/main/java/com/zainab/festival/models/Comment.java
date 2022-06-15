@@ -11,7 +11,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
-import javax.validation.constraints.NotNull;
+import javax.validation.constraints.NotEmpty;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
@@ -25,8 +25,8 @@ public class Comment {
 	private Long id;
 	
 	
-	@NotNull
-	private String comment; 
+	@NotEmpty(message="Can't post empty comment.")
+	private String description; 
 	
 	@Column(updatable=false)
     @DateTimeFormat(pattern="yyyy-MM-dd")
@@ -50,12 +50,13 @@ public class Comment {
 		this.id = id;
 	}
 
-	public String getComment() {
-		return comment;
+
+	public String getDescription() {
+		return description;
 	}
 
-	public void setComment(String comment) {
-		this.comment = comment;
+	public void setDescription(String description) {
+		this.description = description;
 	}
 
 	public Date getCreatedAt() {

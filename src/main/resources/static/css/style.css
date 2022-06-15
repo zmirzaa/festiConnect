@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+h1 {
+	font-family: 'Righteous', cursive;
+	font-size: 60px; 
+	
+}
+
+body {
+	font-family: 'Playfair Display', serif;
+}
+
+
+.btn-primary {
+	background-color: #bc23bb;
+	border: none;
+}
+
+.btn-primary:hover {
+	border:none;
+	background-color: black;
+}
+
+.index-links {
+	text-decoration: none; 
+	color: #bc23bb;
+	
+}
+
+
+
+.index-links:hover {
+	text-decoration: none; 
+	color: black;
+	
+}
+
+.nav-link {
+	color: #bc23bb;
+}
+
+.nav-link:hover {
+	color: black;
+	text-decoration: underline;
+}
+
+
+.search-bar {
+    display: flex;
+    width: 300px;
+    border: 2px solid black; 
+    background-color: white;
+    border-radius: 100px; 
+    outline: none;
+}
+
+.search-field {
+    width: 300px;
+    height: 30px;
+    padding: 5px;
+    margin-left: 15px;
+    border: none; 
+    outline: none; 
+}
+
+.mag-button {
+    border: none;
+    box-shadow: none;
+    border-radius: 50%;
+    margin-right: 5px;
+    background: transparent;
+}
+
+.mag-glass {
+    width:15px;
+    background-color: white;
+    object-fit: cover;
+    border: none
+
+}
+
+.title-pages {
+	color:#bc23bb;
+}
+
+.btn-secondary {
+	padding: 5px;
+	font-size: small;
+}
+
+.btn-secondary:hover {
+	padding: 5px;
+	font-size: small;
+	background-color: red;
+	border: none;
+}
+
+
+#smile {
+	margin-right: 3px;
+}
+
+

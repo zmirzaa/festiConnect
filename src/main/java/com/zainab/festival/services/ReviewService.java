@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.validation.Errors;
+
 
 import com.zainab.festival.models.Comment;
 import com.zainab.festival.models.Review;
@@ -27,7 +27,7 @@ public class ReviewService {
 		
 	}
 	
-	public Review createReview(Review review, Errors errors) {
+	public Review createReview(Review review) {
 		return rRepo.save(review); 
 	}
 	
@@ -59,6 +59,10 @@ public class ReviewService {
 		cRepo.save(comment); 
 	}
 	
+	
+	public List<Review> findByFestivalName(String festivalName) {
+		return rRepo.findByFestivalNameContaining(festivalName);
+	}
 	
 	
 	

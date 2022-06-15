@@ -36,5 +36,8 @@ public class AlertService {
 		return aRepo.save(alert); 
 	}
 	
+	public List<Alert> findByFestivalName(String festivalName) {
+		return aRepo.findByFestivalNameContaining(festivalName);
+	}
 	
 }
