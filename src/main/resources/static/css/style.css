@@ -83,6 +83,26 @@ body {
 	color:#bc23bb;
 }
 
+.list {
+	color: #7f3374;
+}
+
+.list:hover {
+	color: white;
+}
+
+
+#smile {
+	margin-right: 3px;
+}
+
+.dash-pics {
+	width: 100%;
+	height: 500px;
+	margin-top:80px;
+	margin-bottom:80px;
+}
+
 .btn-secondary {
 	padding: 5px;
 	font-size: small;
@@ -91,13 +111,8 @@ body {
 .btn-secondary:hover {
 	padding: 5px;
 	font-size: small;
-	background-color: red;
+	background-color:red;
 	border: none;
-}
-
-
-#smile {
-	margin-right: 3px;
 }
 
 
