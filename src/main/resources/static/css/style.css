@@ -115,4 +115,11 @@ body {
 	border: none;
 }
 
+svg {
+	margin-left: 2.5px;
+	
+}
 
+.title {
+	line-height: 1em;
+}

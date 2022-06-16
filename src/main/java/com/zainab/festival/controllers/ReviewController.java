@@ -46,7 +46,7 @@ public class ReviewController {
 			
 		} else {
 			rService.createReview(review);
-			return "redirect:/dashboard"; 
+			return "redirect:/review/" + review.getId();
 		}
 	}
 	
