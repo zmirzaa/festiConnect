@@ -86,7 +86,7 @@
 	       		 </div>
        		 </div>
        	</div>
-       	<img src="img/hard.jpeg" class="dash-pics img-fluid rounded" alt="crowd-pic">
+       	<a href="https://www.hardsummer.com/"><img src="img/hard.jpeg" class="dash-pics img-fluid rounded" alt="crowd-pic"></a>
         <div class="row py-lg-5"  id="scrollspyHeading2">
         		<div class="d-flex gap-5 justify-content-evenly mb-5 mt-5 text-center">
         	   		<div>
@@ -107,7 +107,7 @@
 				</div>
 	    		</div>
 	    </div>
-	   <img src="img/project.jpeg" class="dash-pics img-fluid rounded" alt="crowd-pic">
+	   <a href="https://www.projectzfest.com/"><img src="img/project.jpeg" class="dash-pics img-fluid rounded" alt="crowd-pic"></a>
         <div class="container col-xl-10 col-xxl-8 px-4 py-5" id="scrollspyHeading3">
 			<div class="row align-items-center g-lg-5 py-5">
 				<div class="col-lg-7 text-center text-lg-start">
@@ -157,7 +157,7 @@
 			      </div>
 			</div>
 		</div>
-		<img src="img/nocc.png" class="dash-pics img-fluid rounded" alt="crowd-pic">
+		<a href="https://www.nocturnalwonderland.com/"><img src="img/nocc.png" class="dash-pics img-fluid rounded" alt="crowd-pic"></a>
         <div class="container col-xl-10 col-xxl-8 px-4 py-5" id="scrollspyHeading4">
 			<div class="row align-items-center g-lg-5 py-5">
 				<div class="col-lg-7 text-center text-lg-start">
