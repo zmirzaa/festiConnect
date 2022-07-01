@@ -50,7 +50,7 @@
 							  <a href="/review/${review.id}" class="list-group-item list-group-item-action d-flex gap-3 py-3 bg-dark text-white" aria-current="true">
 							    <div class="d-flex gap-2 w-100 justify-content-between align-items-center">
 							      <div>
-							        <h6 class="mb-0 list">${review.festivalName} ${review.yearAttended}</h6>
+							        <h6 class="mb-0 review">${review.festivalName} ${review.yearAttended}</h6>
 							        <p class="mb-0 text-muted">${review.likers.size()} like(s)</p>
 							        <p class="mb-0 text-muted">${review.comments.size()} comment(s)</p>
 							      </div>
@@ -76,7 +76,7 @@
 									 <h6 class="mb-0 list">${alert.festivalName}</h6>
 									 <p class="mb-0 text-muted">${alert.description}</p>
 								 </div>
-								 <form:form action="/delete/${alert.id}" method="delete">
+								 <form:form action="/delete/alert/${alert.id}" method="delete">
 								 	<button class="btn btn-secondary">Delete</button>
 								 </form:form>
 							  </div> 

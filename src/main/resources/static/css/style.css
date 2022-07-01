@@ -88,8 +88,19 @@ body {
 }
 
 .list:hover {
+	color: #7f3374;
+}
+
+
+.review {
+	color: #7f3374;
+}
+
+.review:hover {
 	color: white;
 }
+
+
 
 
 #smile {
