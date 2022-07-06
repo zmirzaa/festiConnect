@@ -43,6 +43,7 @@ public class AlertController {
 		if(results.hasErrors()) {
 			User user =(User)session.getAttribute("loginUser"); 
 			User userInSession = uService.findById(user.getId()); 
+			model.addAttribute("alerts", aService.allAlerts());
 			model.addAttribute("userInSession", userInSession); 
 			model.addAttribute("allReviews", rService.allReviews());
 			return "dashboard.jsp"; 

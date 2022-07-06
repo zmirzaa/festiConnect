@@ -20,6 +20,7 @@ import com.zainab.festival.models.Alert;
 import com.zainab.festival.models.Comment;
 import com.zainab.festival.models.Review;
 import com.zainab.festival.models.User;
+import com.zainab.festival.services.AlertService;
 import com.zainab.festival.services.ReviewService;
 import com.zainab.festival.services.UserService;
 
@@ -31,6 +32,9 @@ public class ReviewController {
 	
 	@Autowired
 	ReviewService rService;
+	
+	@Autowired
+	AlertService aService;
 
 	
 	@PostMapping("/createReview") 
@@ -40,6 +44,7 @@ public class ReviewController {
 		if(results.hasErrors()) {
 			User user =(User)session.getAttribute("loginUser"); 
 			User userInSession = uService.findById(user.getId()); 
+			model.addAttribute("alerts", aService.allAlerts()); 
 			model.addAttribute("userInSession", userInSession); 
 			model.addAttribute("allReviews", rService.allReviews());
 			return "dashboard.jsp"; 
